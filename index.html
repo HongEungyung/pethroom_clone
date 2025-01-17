@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>페스룸 클론</title>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js"></script>
+    <title>페스룸 클론</title>
   </head>
   <body>
     <!-- 전체 레이아웃 -->
@@ -17,23 +18,32 @@
       <header class="header">
         <div class="header-inner">
           <!-- 노란색 바 -->
-          <div class="yellow-bar">
-            <div class="inner">
-              <ul class="event-wrap">
-                <li class="event-list">
-                  <span class="ronud-box" id="ronud-box1">EVENT</span>
-                  <span class="event-txt">회원가입 후&nbsp;<strong>첫 구매</strong>&nbsp;시, 휴먼그레이드 간식&nbsp;<strong>100원!</strong>&nbsp;</span>
+
+          <!-- Swiper -->
+          <div class="swiper yellow-bar">
+           
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <a href="#">
+                    <span class="ronud-box" id="ronud-box1">EVENT</span>
+                    <span class="event-txt">회원가입 후&nbsp;<strong>첫 구매</strong>&nbsp;시, 휴먼그레이드 간식&nbsp;<strong>100원!</strong>&nbsp;</span>
+                  </a>
                 </li>
-                <li class="event-list">
-                  <span class="ronud-box" id="ronud-box2">COUPON</span>
-                  <span class="event-txt">카카오톡 채널 추가 시&nbsp;<strong>3000원 할인쿠폰</strong>&nbsp;지급</span>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <span class="ronud-box" id="ronud-box2">COUPON</span>
+                    <span class="event-txt">카카오톡 채널 추가 시&nbsp;<strong>3000원 할인쿠폰</strong>&nbsp;지급</span>
+                  </a> 
                 </li>
-                <li class="event-list">
-                  <span class="ronud-box" id="ronud-box3">VIP</span>
-                  <span class="event-txt">정기구독 시 자동 가입!&nbsp;<strong>전제품 할인</strong>&nbsp;혜택의&nbsp;<strong>VIP 멤버십</strong>을 만나보세요</span>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <span class="ronud-box" id="ronud-box3">VIP</span>
+                    <span class="event-txt">정기구독 시 자동 가입!&nbsp;<strong>전제품 할인</strong>&nbsp;혜택의&nbsp;<strong>VIP 멤버십</strong>을 만나보세요</span>
+                  </a>
                 </li>
               </ul>
-            </div>
+              <div class="swiper-pagination"></div>
+          
           </div>
 
           <!-- 파란색 바 -->
@@ -71,7 +81,7 @@
                   <li><a href="#">COMMUNITY</a></li>
                 </ul>
                 <div class="membership">
-                    <a href="#">MEMBERSHIP</a>
+                  <a href="#">MEMBERSHIP</a>
                 </div>
               </nav>
             </div>
