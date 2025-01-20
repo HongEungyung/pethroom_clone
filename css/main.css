@@ -14,7 +14,6 @@ a {
 /* 전체 레이아웃 */
 body {
   height: 5000px;
-  
 }
 .wrap {
   position: relative;
@@ -23,8 +22,13 @@ body {
 
 /* 헤더 */
 .header {
-  /* background-color: aqua; */
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
 }
+
 .inner {
   position: relative;
   width: 100%;
@@ -34,8 +38,6 @@ body {
 
 /* 노란색 바 */
 .yellow-bar {
-  /* position: fixed;
-    z-index: 1; */
   width: 100%;
   height: 30px;
   background-color: #ffc524;
@@ -68,15 +70,6 @@ body {
 .event-txt strong {
   color: #1a2867;
   font-weight: 900;
-}
-
-/* 파란색 , 하얀색 바 묶음 */
-.header-nav {
-  width: 100%;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
 }
 
 /* 파란색 바 */
@@ -149,6 +142,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  max-width: 100%;
 }
 .image-box img {
   display: block;
@@ -179,57 +173,80 @@ body {
 }
 
 /* 배경 영역 */
-.background{
+.background {
   background: url("../images/bg4.webp") center;
-    background-repeat: repeat-y;
-    background-position: top;
+  background-repeat: repeat-y;
+  background-position: top;
 }
-
+.background img {
+  width: 100%;
+  max-width: 1360px;
+  display: block;
+  margin: auto;
+}
 /* 콘텐츠 영역 */
 .contents {
   position: relative;
   width: 1300px;
   margin: 0 auto;
-  display: flex;
-
 }
 
 /* 3층 */
 .third-floor {
+  position: relative;
   width: 100%;
   background-color: #ff7f7f;
-  display: flex;
-  align-content: center;
 }
-/* 3층 지붕 */
+
+/* 3층 상단 지붕 */
 .roof-third {
   width: 100%;
-}
-.roof-third img {
-  width: 105%;
-  display: block;
+  background-color: rgb(48, 235, 104);
+  position: relative;
 }
 /* 3층 비디오 */
 figure {
   position: relative;
-  width: 1200px;
+  width: 100%;
+  margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 figure video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  object-fit: cover;
+  width: 1280px;
+max-width: 100%;
 }
 
-/* 3층 메인 */
+/* 3층 메인 콘텐츠 */
 .main-third {
-  display: flex;
   background-color: rgb(252, 159, 255);
+  display: flex;
+  justify-content: space-between;
+  height: 610px;
 }
-.main-third img{
+.middle-roof{
   width: 100%;
+  height: 10px;
+  background-color: red;
 }
 /* 3층 왼쪽 텍스트 */
-section .left-third
+.left-third {
+display: flex;
+flex-direction: column;
+}
 /* 3층 오른쪽 상품 */
+.right-third{
+display: flex;
+}
+.product-list{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.product-list > li {
+  width: 255px;
+  overflow: hidden;
+  cursor: pointer;
+}
+

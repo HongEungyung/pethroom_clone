@@ -3,6 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- seo 엔진 최적화 -->
+    <!-- 웹페이지의 설명을 정의 -->
+    <meta name="description" content="페스룸 웹사이트입니다." />
+    <!-- 웹페이지와 관련된 키워드를 정의 -->
+    <meta name="keywords" content="페스룸, PETHROOM" />
+    <!-- 웹페이지의 저자를 정의  -->
+    <meta name="author" content="페스룸" />
+    <!-- 소셜 미디어에서 페이지가 공유될때 사용되는 제목 -->
+    <meta property="og:title" content="페스룸" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 사이트 이름 -->
+    <meta property="og:site_name" content="페스룸 웹사이트" />
+    <!-- 소셜 미디어에서 페이지가 웹사이트임을 명시 -->
+    <meta property="og:type" content="website" />
+    <!-- Open Graph 프로토콜에서 사용되는 메타 태그의 속성 중 하나로, 페이지의 간략한 설명을 제공하는 데 사용 -->
+    <!-- 소셜 미디어에서 공유될 때 사용되는 URL -->
+    <meta property="og:url" content="https://hongeungyung.github.io/pethroom_clone/" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 이미지 -->
+    <meta property="og:image" content="https://hongeungyung.github.io/pethroom_clone/images/main%20banner%20image_1920.png" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
+    <meta property="og:description" content="페스룸 웹사이트입니다." />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -41,137 +61,134 @@
             </ul>
             <div class="swiper-pagination"></div>
           </div>
-
-          <!-- 파란색 , 하얀색 바 묶음 -->
-          <div class="header-nav">
-            <!-- 파란색 바 -->
-            <div class="blue-bar">
-              <div class="inner">
-                <!-- 로고, 아이콘 -->
-                <a href="#index.html" class="logo-white">
-                  <img src="images/logo-white.png" alt="PETHROOM-LOGO-WHITE" />
+          <!-- 파란색 바 -->
+          <div class="blue-bar">
+            <div class="inner">
+              <!-- 로고, 아이콘 -->
+              <a href="#index.html" class="logo-white">
+                <img src="images/logo-white.png" alt="PETHROOM-LOGO-WHITE" />
+              </a>
+              <div class="icons">
+                <a href="#" class="icon1">
+                  <img src="images/magnifying-glass-solid.svg" alt="SEARCH" />
                 </a>
-                <div class="icons">
-                  <a href="#" class="icon1">
-                    <img src="images/magnifying-glass-solid.svg" alt="SEARCH" />
-                  </a>
-                  <a href="#" class="icon2">
-                    <img src="images/user-solid.svg" alt="SEARCH" />
-                  </a>
-                  <a href="#" class="icon3">
-                    <img src="images/basket-shopping-solid.svg" alt="SEARCH" />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- 하얀색 바 -->
-            <div class="white-bar">
-              <div class="inner">
-                <nav class="nav">
-                  <ul class="gnb">
-                    <li><a href="#">VIP CENTER</a></li>
-                    <li><a href="#">PRODUCT</a></li>
-                    <li><a href="#">ROBOT LAB</a></li>
-                    <li><a href="#">EVENT</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">GLOBAL</a></li>
-                    <li><a href="#">COMMUNITY</a></li>
-                  </ul>
-                  <div class="membership">
-                    <a href="#">MEMBERSHIP</a>
-                  </div>
-                </nav>
+                <a href="#" class="icon2">
+                  <img src="images/user-solid.svg" alt="SEARCH" />
+                </a>
+                <a href="#" class="icon3">
+                  <img src="images/basket-shopping-solid.svg" alt="SEARCH" />
+                </a>
               </div>
             </div>
           </div>
-
-          <!-- 상단 이미지 영역 -->
-          <div class="image-box">
-            <img src="images/background3.jpg" alt="백그라운드" class="background3" />
-            <img src="images/main banner image_1920.png" alt="메인배너" class="main-banner" />
-          </div>
-
-          <!-- 중간 바 blue -->
-          <div class="center-bar">
-            <ul class="center-gnb">
-              <li><a href="#">VIP CENTER</a></li>
-              <li><a href="#">3F BATHROOM</a></li>
-              <li><a href="#">2F KITCHEN</a></li>
-              <li><a href="#">1F LIVINGROOM</a></li>
-            </ul>
-          </div>
-
-          <!-- 배경 영역 -->
-          <div class="background">
-
-            <!-- 콘텐츠 영역 -->
-            <div class="contents">
-              <!-- 3층 -->
-              <div class="third-floor">
-                <!-- 3층 지붕 -->
-                <div class="roof-third">
-                  <img src="images/roof.png" alt="지붕" />
-                  <!-- 3층 비디오 -->
-                  <figure class="video3">
-                    <video src="images/3F bathroom.mp4" autoplay loop muted></video>
-                  </figure>
+          <!-- 하얀색 바 -->
+          <div class="white-bar">
+            <div class="inner">
+              <nav class="nav">
+                <ul class="gnb">
+                  <li><a href="#">VIP CENTER</a></li>
+                  <li><a href="#">PRODUCT</a></li>
+                  <li><a href="#">ROBOT LAB</a></li>
+                  <li><a href="#">EVENT</a></li>
+                  <li><a href="#">ABOUT</a></li>
+                  <li><a href="#">GLOBAL</a></li>
+                  <li><a href="#">COMMUNITY</a></li>
+                </ul>
+                <div class="membership">
+                  <a href="#">MEMBERSHIP</a>
                 </div>
-                <!-- 3층 메인 -->
-                <main class="main-third">
-                  <img src="images/mid-frame.png" alt="중앙" />
-                  <!-- 3층 왼쪽 텍스트 -->
-                  <section class="left-third">
-                    <h1>PETHROOM</h1>
-                    <p>페스룸은 반려동물 욕실 용품에서 출발해 반려생활과 관련된 산업에 진출하였습니다. 페스룸은 동물의 관점에서 생각하면서 건강한 반려문화를 선도합니다.</p>
-                    <p>PETHROOM has entered the pet life industry, starting with pet bathroom products. PETHROOM leads a healthy pet culture while thinking from an animal perspective.</p>
-                  </section>
-                  <!-- 3층 오른쪽 상품 -->
-                  <section class="right-third">
-                    <ul class="product-list">
-                      <li>
-                        <img src="images/3f (1).jpg" alt="3층 1" />
-                        <div class="caption">
-                          <h3>릴렉스 필터 샤워기 & 리필</h3>
-                          <p>소음방지와 물 튀김 차단 + ACF 멀티 필터까지 장착한 반려동물 전용 필터 샤워기</p>
-                          <p>48,000</p>
-                          <p>34,900 일반할인가</p>
-                          <p>29,700 VIP혜택가 38%</p>
-                          <p>★4.7 (22)</p>
-                        </div>
-                      </li>
-                      <li>
-                        <img src="images/3f (2) .jpg" alt="3층 2" />
-                        <div class="caption">
-                          <h3>펫 샤워 챌린지 샴푸</h3>
-                          <p>풍성하고 쫀쫀한 초미세거품으로 목욕시간을 단축시키는 샴푸</p>
-                          <p>37,000</p>
-                          <p>28,900 일반할인가</p>
-                          <p>25,500 VIP혜택가 31%</p>
-                          <p>★4.7 (117)</p>
-                        </div>
-                      </li>
-                      <li>
-                        <img src="images/3f (3) .jpg" alt="3층 3" />
-                        <div class="caption">
-                          <h3>스펀지 타월 M</h3>
-                          <p>초극세사 원단으로 흡수력 3배! 드라이 시간 단축하는 마법 타월</p>
-                          <p>27,000</p>
-                          <p>18,900 일반할인가</p>
-                          <p>15,200 VIP혜택가 44%</p>
-                          <p>★4.7 (17,391)</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </section>
-                </main>
-              </div>
-              <section class="second-floor"></section>
-              <section class="first-floor"></section>
+              </nav>
             </div>
           </div>
         </div>
       </header>
+
+      <!-- 상단 이미지 영역 -->
+      <div class="image-box">
+        <img src="images/background3.jpg" alt="백그라운드" class="background3" />
+        <img src="images/main banner image_1920.png" alt="메인배너" class="main-banner" />
+      </div>
+
+      <!-- 중간 바 blue -->
+      <div class="center-bar">
+        <ul class="center-gnb">
+          <li><a href="#">VIP CENTER</a></li>
+          <li><a href="#">3F BATHROOM</a></li>
+          <li><a href="#">2F KITCHEN</a></li>
+          <li><a href="#">1F LIVINGROOM</a></li>
+        </ul>
+      </div>
+
+      <!-- 배경 영역 -->
+      <div class="background">
+        <img src="images/roof.png" alt="지붕" />
+        <!-- 콘텐츠 영역 -->
+        <div class="contents">
+
+          <!-- 3층 -->
+          <div class="third-floor">
+            
+            <!-- 3층 상단 지붕 -->
+            <div class="roof-third">
+              <!-- 3층 비디오 -->
+              <figure class="video3">
+                <video src="images/3F bathroom.mp4" autoplay loop muted></video>
+              </figure>
+            </div>
+
+            <!-- 3층 메인 콘텐츠-->
+            <main class="main-third">
+              <div class="middle-roof"></div>
+              <!-- 3층 왼쪽 텍스트 -->
+              <section class="left-third">
+                <h1>PETHROOM</h1>
+                <p>페스룸은 반려동물 욕실 용품에서 출발해 반려생활과 관련된 산업에 진출하였습니다. 페스룸은 동물의 관점에서 생각하면서 건강한 반려문화를 선도합니다.</p>
+                <p>PETHROOM has entered the pet life industry, starting with pet bathroom products. PETHROOM leads a healthy pet culture while thinking from an animal perspective.</p>
+              </section>
+              <!-- 3층 오른쪽 상품 -->
+              <section class="right-third">
+                <ul class="product-list">
+                  <li>
+                    <img src="images/3f (1).jpg" alt="3층 1" />
+                    <div class="caption">
+                      <h3>릴렉스 필터 샤워기 & 리필</h3>
+                      <p>소음방지와 물 튀김 차단 + ACF 멀티 필터까지 장착한 반려동물 전용 필터 샤워기</p>
+                      <p>48,000</p>
+                      <p>34,900 일반할인가</p>
+                      <p>29,700 VIP혜택가 38%</p>
+                      <p>★4.7 (22)</p>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="images/3f (2) .jpg" alt="3층 2" />
+                    <div class="caption">
+                      <h3>펫 샤워 챌린지 샴푸</h3>
+                      <p>풍성하고 쫀쫀한 초미세거품으로 목욕시간을 단축시키는 샴푸</p>
+                      <p>37,000</p>
+                      <p>28,900 일반할인가</p>
+                      <p>25,500 VIP혜택가 31%</p>
+                      <p>★4.7 (117)</p>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="images/3f (3) .jpg" alt="3층 3" />
+                    <div class="caption">
+                      <h3>스펀지 타월 M</h3>
+                      <p>초극세사 원단으로 흡수력 3배! 드라이 시간 단축하는 마법 타월</p>
+                      <p>27,000</p>
+                      <p>18,900 일반할인가</p>
+                      <p>15,200 VIP혜택가 44%</p>
+                      <p>★4.7 (17,391)</p>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+            </main>
+          </div>
+          <div class="second-floor"></div>
+          <div class="first-floor"></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
