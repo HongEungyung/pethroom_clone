@@ -180,18 +180,18 @@ body {
 
 /* 배경 영역 */
 .background{
-  background: url("../images/bg4.webp");
+  background: url("../images/bg4.webp") center;
     background-repeat: repeat-y;
     background-position: top;
-    padding-top: 1775px;
 }
 
-/* 메인 콘텐츠 */
+/* 콘텐츠 영역 */
 .contents {
   position: relative;
   width: 1300px;
-  margin: auto;
-  /* display: flex; */
+  margin: 0 auto;
+  display: flex;
+
 }
 
 /* 3층 */
@@ -201,6 +201,7 @@ body {
   display: flex;
   align-content: center;
 }
+/* 3층 지붕 */
 .roof-third {
   width: 100%;
 }
@@ -208,7 +209,7 @@ body {
   width: 105%;
   display: block;
 }
-/* 비디오 */
+/* 3층 비디오 */
 figure {
   position: relative;
   width: 1200px;
@@ -220,9 +221,15 @@ figure video {
   width: 100%;
   object-fit: cover;
 }
-/* 메인 */
+
+/* 3층 메인 */
 .main-third {
   display: flex;
-  margin: auto;
   background-color: rgb(252, 159, 255);
 }
+.main-third img{
+  width: 100%;
+}
+/* 3층 왼쪽 텍스트 */
+section .left-third
+/* 3층 오른쪽 상품 */
