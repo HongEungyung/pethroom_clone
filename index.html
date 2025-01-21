@@ -23,6 +23,12 @@
     <meta property="og:image" content="https://hongeungyung.github.io/pethroom_clone/images/main%20banner%20image_1920.png" />
     <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
     <meta property="og:description" content="페스룸 웹사이트입니다." />
+    <!-- fivicon적용 -->
+    <link rel="icon" type="image/png" href="images/pethroom-favi.png" sizes="50x50" />
+    <!-- <link rel="icon" type="image/svg+xml" href="images/icon/favicon.svg" /> -->
+    <!-- <link rel="shortcut icon" href="images/icon/favicon.ico" /> -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-touch-icon.png" /> -->
+    <!-- <link rel="manifest" href="images/icon/site.webmanifest" /> -->
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -42,19 +48,19 @@
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
                 <a href="#">
-                  <span class="ronud-box" id="ronud-box1">EVENT</span>
+                  <span class="round-box" id="round-box1">EVENT</span>
                   <span class="event-txt">회원가입 후&nbsp;<strong>첫 구매</strong>&nbsp;시, 휴먼그레이드 간식&nbsp;<strong>100원!</strong>&nbsp;</span>
                 </a>
               </li>
               <li class="swiper-slide">
                 <a href="#">
-                  <span class="ronud-box" id="ronud-box2">COUPON</span>
+                  <span class="round-box" id="round-box2">COUPON</span>
                   <span class="event-txt">카카오톡 채널 추가 시&nbsp;<strong>3000원 할인쿠폰</strong>&nbsp;지급</span>
                 </a>
               </li>
               <li class="swiper-slide">
                 <a href="#">
-                  <span class="ronud-box" id="ronud-box3">VIP</span>
+                  <span class="round-box" id="round-box3">VIP</span>
                   <span class="event-txt">정기구독 시 자동 가입!&nbsp;<strong>전제품 할인</strong>&nbsp;혜택의&nbsp;<strong>VIP 멤버십</strong>을 만나보세요</span>
                 </a>
               </li>
@@ -105,8 +111,9 @@
 
       <!-- 상단 이미지 영역 -->
       <div class="image-box">
-        <img src="images/background3.jpg" alt="백그라운드" class="background3" />
+        <!-- <img src="images/mainbanner_background3.png" alt="백그라운드" class="background3" /> -->
         <img src="images/main banner image_1920.png" alt="메인배너" class="main-banner" />
+     
       </div>
 
       <!-- 중간 바 blue -->
@@ -121,7 +128,8 @@
 
       <!-- 배경 영역 -->
       <div class="background">
-        <img src="images/roof.png" alt="지붕" />
+          <img src="images/roof.png" alt="지붕" />
+    
         <!-- 콘텐츠 영역 -->
         <div class="contents">
 
@@ -138,29 +146,30 @@
 
             <!-- 3층 메인 콘텐츠-->
             <main class="main-third">
-              <div class="middle-roof"></div>
+              
               <!-- 3층 왼쪽 텍스트 -->
               <section class="left-third">
-                <h1>PETHROOM</h1>
+                <h1>BATHROOM</h1>
                 <p>페스룸은 반려동물 욕실 용품에서 출발해 반려생활과 관련된 산업에 진출하였습니다. 페스룸은 동물의 관점에서 생각하면서 건강한 반려문화를 선도합니다.</p>
                 <p>PETHROOM has entered the pet life industry, starting with pet bathroom products. PETHROOM leads a healthy pet culture while thinking from an animal perspective.</p>
               </section>
               <!-- 3층 오른쪽 상품 -->
-              <section class="right-third">
-                <ul class="product-list">
-                  <li>
-                    <img src="images/3f (1).jpg" alt="3층 1" />
+               <!-- Swiper -->
+              <section class="swiper itemSwiper">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <img src="images/3f-1.jpg" alt="3층-1" />
                     <div class="caption">
                       <h3>릴렉스 필터 샤워기 & 리필</h3>
                       <p>소음방지와 물 튀김 차단 + ACF 멀티 필터까지 장착한 반려동물 전용 필터 샤워기</p>
                       <p>48,000</p>
-                      <p>34,900 일반할인가</p>
-                      <p>29,700 VIP혜택가 38%</p>
+                      <p><strong>34,900</strong> 일반할인가</p>
+                      <p><strong>29,700</strong> VIP혜택가 38%</p>
                       <p>★4.7 (22)</p>
                     </div>
                   </li>
-                  <li>
-                    <img src="images/3f (2) .jpg" alt="3층 2" />
+                  <li class="swiper-slide">
+                    <img src="images/3f-2.jpg" alt="3층-2" />
                     <div class="caption">
                       <h3>펫 샤워 챌린지 샴푸</h3>
                       <p>풍성하고 쫀쫀한 초미세거품으로 목욕시간을 단축시키는 샴푸</p>
@@ -170,8 +179,8 @@
                       <p>★4.7 (117)</p>
                     </div>
                   </li>
-                  <li>
-                    <img src="images/3f (3) .jpg" alt="3층 3" />
+                  <li class="swiper-slide">
+                    <img src="images/3f-3.jpg" alt="3층-3" />
                     <div class="caption">
                       <h3>스펀지 타월 M</h3>
                       <p>초극세사 원단으로 흡수력 3배! 드라이 시간 단축하는 마법 타월</p>
@@ -179,6 +188,39 @@
                       <p>18,900 일반할인가</p>
                       <p>15,200 VIP혜택가 44%</p>
                       <p>★4.7 (17,391)</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <img src="images/3F-4.jpg" alt="3층-4" />
+                    <div class="caption">
+                      <h3>더스트 프리 벤토나이트 코티드 파인</h3>
+                      <p>수분 코팅 공법으로 먼지 완벽 방어! 응고력과 기호성까지 잡은 벤토나이트</p>
+                      <p>32,000</p>
+                      <p>25,900 일반할인가</p>
+                      <p>22,900 VIP혜택가 30%</p>
+                      <p>★4.7 (1,001)</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <img src="images/3F-5.jpg" alt="3층-5" />
+                    <div class="caption">
+                      <h3>스마일 패드 (소형/대형)</h3>
+                      <p>초강력 흡수제 최다 함유한 프리미엄 배변패드, 소형(50매) 대형(20매)</p>
+                      <p>21,000</p>
+                      <p>11,900 일반할인가</p>
+                      <p>10,800 VIP혜택가 49%</p>
+                      <p>★4.8 (9,895)</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <img src="images/3F-6.jpg" alt="3층-6" />
+                    <div class="caption">
+                      <h3>더스트 프리 벤토나이트 오리지널</h3>
+                      <p>먼지 최소화 & 단단 응고력 & 사막화 방지를 원한다면</p>
+                      <p>29,900</p>
+                      <p>23,900 일반할인가</p>
+                      <p>20,900 VIP혜택가 30%</p>
+                      <p>★4.7 (30,903)</p>
                     </div>
                   </li>
                 </ul>
