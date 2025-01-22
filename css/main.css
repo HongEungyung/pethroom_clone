@@ -1,7 +1,7 @@
 @charset "utf-8";
 @font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -20,7 +20,7 @@ a {
 /* 전체 레이아웃 */
 body {
   height: 5000px;
-  font-family: 'Pretendard-Regular'
+  font-family: "Pretendard-Regular";
 }
 .wrap {
   position: relative;
@@ -149,18 +149,6 @@ body {
   width: 100%;
   display: block;
 }
-.background3{
-}
-
-
-/* .main-banner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 100%;
-} */
-
 
 /* 중간 바 blue */
 .center-bar {
@@ -186,18 +174,21 @@ body {
   color: #ffffff;
 }
 
-/* 배경 영역 */
+/* 배경 창문 반복 이미지 */
 .background {
   background: url("../images/bg4.webp") center;
   background-repeat: repeat-y;
   background-position: top;
 }
-.background img {
-  width: 100%;
-  max-width: 1360px;
+
+/* 3층 위 지붕 이미지 */
+.top-frame img {
+  width: 104.7%;
+  /* max-width: 1360px; */
   display: block;
-  margin: auto;
+  margin-left: -30.1px;
 }
+
 /* 콘텐츠 영역 */
 .contents {
   width: 100%;
@@ -210,60 +201,56 @@ body {
 .third-floor {
   position: relative;
   width: 100%;
-  background-color: #ff7f7f;
+  background-color: #ebebeb;
 }
 
-/* 3층 상단 지붕 */
-.roof-third {
-  width: 100%;
-  background-color: #ebebeb;
-  position: relative;
-}
 /* 3층 비디오 */
 figure {
   position: relative;
   width: 100%;
   margin: auto;
-display: flex;
-justify-content: center;
-align-items: center;
-/* background-color: tomato; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: tomato; */
 }
 figure video {
   width: 100%;
-max-width: 1220px;
+  max-width: 1220px;
 }
 
 /* 3층 메인 콘텐츠 */
-.main-third {
+main {
   position: relative;
-  background-color: rgb(252, 159, 255);
+  background-color: #fff;
   display: flex;
   gap: 2%;
   justify-content: space-between;
   /* height: 610px; */
-  padding: 0 40px;
+  margin: 0 40px;
+  padding-bottom: 70px;
 }
 
 /* 3층 왼쪽 텍스트 */
-.left-third {
-display: flex;
-flex-direction: column;
-justify-content: center;
-gap: 10px;
-/* width: 298px; */
-width: 32%;
-margin-top: 10px;
-background-color: rgb(255, 255, 255);
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  /* width: 298px; */
+  width: 32%;
+  margin-top: 10px;
+  padding: 0 40px;
+  background-color: rgb(255, 255, 255);
 }
-.left-third > h1 {
+.left > h1 {
   margin-bottom: 14px;
   /* gap 으로 10px 더 주고 있음 */
-font-size: 26px;
+  font-size: 26px;
   font-weight: 800;
   color: #101010;
 }
-.left-third > p {
+.left > p {
   display: block;
   font-size: 13px;
   font-weight: 500;
@@ -273,38 +260,93 @@ font-size: 26px;
 }
 
 /* 3층 오른쪽 상품 */
-.itemSwiper{
+.itemSwiper {
   width: 68%;
   margin-top: 10px;
-display: flex;
-background-color: #ffc524;
-}
-
-.itemSwiper .swiper-slide {
-  
+  display: flex;
+  /* background-color: #ffc524; */
 }
 .itemSwiper .swiper-slide img {
   width: 100%;
 }
-.caption{
-  padding: 20px 0;
+
+/* 상세설명 캡션 */
+.caption {
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
 }
-.caption h3{
+.caption .name {
   font-size: 18px;
-    font-weight: 700;
-    word-break: keep-all;
-    line-height: 1.3;
+  font-weight: 900;
+  word-break: keep-all;
+  line-height: 1.3;
+  margin-bottom: 5px;
 }
-.caption p {
+.caption .name a {
+  display: block;
+  color: #101010;
+  cursor: pointer;
+}
+.caption .name_sub {
   font-size: 15px;
-    font-weight: 500;
-    color: #818389;
-    word-break: keep-all;
-    line-height: 1.3;
-}
-.caption p:nth-child(4){
-  font-size: 20px;
   font-weight: 500;
-  line-height: 1;
+  color: #818389;
+  word-break: keep-all;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+/* 가격 */
+.caption .priceGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.caption .priceGroup .customer{
+  font-size: 15px;
+  color: #8b8b8b;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+.caption .normal_price_area {
+  display: flex;
+  align-items: flex-end;
+  gap: 28px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+}
+.caption .normal_price{
+  font-size: 20px;
+}
+.caption .sale_price_area {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
   color: #ae1522;
+  /* margin-top: 10px; */
+}
+.caption .sale_price{
+  font-size: 20px;
+}
+.caption .crmReview {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+}
+.caption .crmReview span {
+  position: relative;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* 2층 */
+.middle-top-frame img {
+  width: 102%;
+  /* max-width: 1360px; */
+  display: block;
+  margin-left: -12.5px;
 }
