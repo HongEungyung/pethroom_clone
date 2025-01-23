@@ -19,7 +19,7 @@ window.onload = function () {
     },
     slidesPerView: 1.5,
     // 첫 화면에 이미지 몇 개 보여줄래
-    spaceBetween:10,
+    spaceBetween: 10,
     breakpoints: {
       768: {
         slidesPerView: 2,
@@ -28,5 +28,22 @@ window.onload = function () {
         slidesPerView: 3,
       },
     },
+  });
+
+  // 헤더 스크롤
+  const navScroll = document.querySelector(".nav-bar");
+  const nav_img_box_margin = document.querySelector(".image-box");
+  window.addEventListener("scroll", function () {
+    navScroll.classList.add("scrolled");
+    nav_img_box_margin.classList.add("nav_img_box_margin-box");
+    // console.log("스크롤 y 값 :" , window.scrollY)
+    // window.scrollY 는 f12 console 에서 스크롤하면 알아서 스크롤 Y값 알려줌
+    if (window.scrollY > 30) {
+      navScroll.classList.add("scrolled");
+      nav_img_box_margin.classList.add("nav_img_box_margin");
+    } else {
+      navScroll.classList.remove("scrolled");
+      nav_img_box_margin.classList.remove("nav_img_box_margin");
+    }
   });
 };
