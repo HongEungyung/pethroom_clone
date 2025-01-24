@@ -42,6 +42,8 @@ body {
   width: 100%;
   max-width: 1580px;
   margin: auto;
+  /* padding: 0 70px; */
+  background-color: #ff2a2a;
 }
 
 /* 노란색 바 */
@@ -84,8 +86,8 @@ body {
 .nav-bar {
   width: 100%;
   position: relative;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .scrolled {
@@ -97,12 +99,20 @@ body {
 /* 파란색 바 */
 .blue-bar {
   display: flex;
+align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 50px;
+  padding: 0 7%;
+  margin: auto;
   background-color: #1a2867;
 }
-.blue-bar .logo-white img {
+.blue-bar .logo-white {
   width: 123px;
+  margin-top: 3px;
+}
+.blue-bar .logo-white img {
+  width: 100%;
 }
 .blue-bar .inner {
   display: flex;
@@ -115,7 +125,7 @@ body {
   width: 120px;
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 .blue-bar .icon1 {
   width: 19px;
@@ -127,21 +137,22 @@ body {
   width: 20px;
 }
 
-/* 반응형 파란색 바 메뉴 */
-.blue-bar .icon-menu{
-  /* 미디어 쿼리로 다시 display:block 해주기 */
+/* 768 파란색 바 3줄 메뉴 아이콘 */
+.blue-bar .icon-menu {
   display: none;
   width: 20px;
-  line-height: 60px;
+  margin-top: 5px;
   z-index: 99999;
   /* background-color: #ae1522; */
 }
-.blue-bar .icon-menu img{
+.blue-bar .icon-menu img {
   width: 100%;
 }
 
 /* 하얀색 바 */
 .white-bar {
+  padding: 0 7%;
+  margin: auto;
   width: 100%;
   height: 50px;
   background-color: #fff;
@@ -176,9 +187,17 @@ body {
 .nav_img_box_margin {
   margin-top: 70px;
 }
-.image-box img {
+.image-box > img {
   width: 100%;
   display: block;
+}
+
+/* 상단 이미지 768, 390 ver. */
+.image-box > .main-banner-tablet {
+  display: none;
+}
+.image-box > .main-banner-mobile {
+  display: none;
 }
 
 /* 중간 바 blue */
@@ -266,13 +285,13 @@ figure video {
 /* 3층 메인 콘텐츠 */
 main {
   position: relative;
-  background-color: #fff;
   display: flex;
   gap: 2%;
   justify-content: space-between;
   /* height: 610px; */
   margin: 0 40px;
   padding-bottom: 70px;
+  background-color: #fff;
 }
 
 /* 3층 왼쪽 텍스트 */
@@ -400,8 +419,8 @@ main {
 
 /* 하단 이미지 영역 */
 .bottom-image-box {
-  width: 188.3%;
-  margin-left: -575px;
+  /* width: 188.3%; */
+  /* margin-left: -575px; */
 }
 .bottom-image-box img {
   width: 100%;
@@ -479,16 +498,16 @@ footer {
 }
 
 /* cs-center */
-.cs-center p{
+.cs-center p {
   font-weight: 600;
   font-size: 14px;
 }
-.cs-center li{
+.cs-center li {
   line-height: 2;
   font-size: 13px;
   font-weight: 100;
 }
-.cs-center li:last-child{
+.cs-center li:last-child {
   margin-top: 30px;
 }
 

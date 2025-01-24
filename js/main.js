@@ -17,7 +17,7 @@ window.onload = function () {
       delay: 2000,
       disableOnInteraction: false,
     },
-    slidesPerView: 1.5,
+    slidesPerView: 2,
     // 첫 화면에 이미지 몇 개 보여줄래
     spaceBetween: 10,
     breakpoints: {

@@ -1,0 +1,89 @@
+@media screen and (max-width: 768px) {
+  /* 상단 이미지 */
+  .image-box > .main-banner-web {
+    display: none;
+  }
+  .image-box > .main-banner-mobile {
+    display: none;
+  }
+  .image-box > .main-banner-tablet {
+    display: block;
+  }
+
+  /* 헤더 이너 */
+  .inner {
+    padding: 0 20px;
+  }
+
+  /* 헤더 파란색 */
+  .blue-bar{
+    display: flex;
+    align-items: center;
+  }
+  .blue-bar .logo-white{
+    margin-top: 5px;
+  }
+  .blue-bar .icon-menu{
+    display: block;
+  }
+  .blue-bar .icon2 {
+    display: none;
+  }
+  .blue-bar .icons{
+    width: 50px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  /* 헤더 흰색 */
+  .white-bar{
+    display: none;
+  }
+
+  /* 중간 바 */
+  .center-bar{
+    display: none;
+  }
+
+/* 콘텐츠 영역 전체 + 지붕 */
+.top-frame img{
+ width: 105%;
+}
+
+  /* 메인 (왼쪽 텍스트 + 오른쪽 상품 이미지 리스트) */
+  main{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  /* 텍스트 */
+  .left{
+    width: 100%;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .left > h1{
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .left > p{
+    font-size: 10px;
+
+    /* width: 100%; */
+
+    /* display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; */
+
+    white-space: wrap;
+  }
+  .left p br {
+    display: none;
+  }
+  /* 이미지 슬라이드 */
+  .itemSwiper{
+    width: 100%;
+  }
+}
