@@ -75,7 +75,7 @@ body {
 }
 .event-txt {
   font-size: 13px;
-  color: #000;
+  color: #1a2867;
 }
 .event-txt strong {
   color: #1a2867;
@@ -89,6 +89,9 @@ body {
   /* display: flex;
   flex-direction: column; */
 }
+.nav_img_box_margin {
+  margin-top: 70px;
+}
 
 .scrolled {
   position: fixed;
@@ -99,7 +102,7 @@ body {
 /* 파란색 바 */
 .blue-bar {
   display: flex;
-align-items: center;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
   height: 50px;
@@ -184,9 +187,6 @@ align-items: center;
   position: relative;
   margin: 0;
 }
-.nav_img_box_margin {
-  margin-top: 70px;
-}
 .image-box > img {
   width: 100%;
   display: block;
@@ -238,7 +238,7 @@ align-items: center;
 .top-frame {
   width: 104.7%;
   max-width: 1360px;
-  margin-left: -30.1px;
+  margin: auto;
 }
 .top-frame img {
   width: 100%;
@@ -408,9 +408,9 @@ main {
 
 /* 2층, 1층 지붕*/
 .middle-top-frame {
-  width: 102%;
-  max-width: 1360px;
-  margin-left: -12.5px;
+  width: 100%;
+  max-width: 1325px;
+  /* margin-left: -12.5px; */
 }
 .middle-top-frame img {
   width: 100%;
@@ -419,8 +419,11 @@ main {
 
 /* 하단 이미지 영역 */
 .bottom-image-box {
-  /* width: 188.3%; */
-  /* margin-left: -575px; */
+  width: 2450px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
 }
 .bottom-image-box img {
   width: 100%;
