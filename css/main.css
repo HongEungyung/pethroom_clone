@@ -20,7 +20,6 @@ a {
 }
 /* 전체 레이아웃 */
 body {
-  height: 5000px;
   font-family: "Pretendard-Regular";
 }
 .wrap {
@@ -227,6 +226,41 @@ body {
   color: #ffffff;
 }
 
+/* 중간 바 active */
+.center-gnb li{
+  position: relative;
+}
+.center-gnb .center-bath::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #ffc524;
+  position: absolute;
+  bottom: 0;
+  transition: 0.2s;
+}
+/* .center-gnb .center-kitchen::after{
+  content: "";
+  display: none;
+  width: 100%;
+  height: 4px;
+  background-color: #ffc524;
+  position: absolute;
+  bottom: 0;
+  transition: 0.2s;
+}
+.center-gnb .center-livingroom::after{
+  content: "";
+  display: none;
+  width: 100%;
+  height: 4px;
+  background-color: #ffc524;
+  position: absolute;
+  bottom: 0;
+  transition: 0.2s;
+} */
+
 /* 배경 창문 반복 이미지 */
 .background {
   background: url("../images/bg4.webp") center;
@@ -409,6 +443,7 @@ main {
 /* 2층, 1층 지붕*/
 .middle-top-frame {
   width: 100%;
+  margin: auto;
   max-width: 1325px;
   /* margin-left: -12.5px; */
 }
@@ -430,13 +465,28 @@ main {
   display: block;
 }
 
+/* 하단 이미지 영역 T */
+.bottom-image-box-T{
+  display: none;
+  max-width: 768px;
+  position: relative;
+}
+.bottom-image-box-T img{
+  width: 100%;
+  display: block;
+}
+
 /* 풋터 */
-footer {
+footer{
+  width: 100%;
+  background-color: #1a2867;
+  color: #fff;
+}
+
+.footer {
   position: relative;
   width: 100%;
   height: 408px;
-  background-color: #1a2867;
-  color: #fff;
   padding: 100px 0 80px;
 }
 .footer-contents {
@@ -522,4 +572,66 @@ footer {
 .sns-service li a img {
   width: 30px;
   height: 30px;
+}
+
+/* 풋터 T */
+.footer-T{
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 482px;
+  padding: 40px 0 30px;
+}
+.footer-contents-T{
+  position: relative;
+  padding: 15px;
+}
+
+/* 로고 노란색 T */
+.logo-yellow-T {
+  width: 110px;
+  padding-bottom: 15px;
+}
+.logo-yellow-T img {
+  width: 100%;
+}
+
+/* 회사 정보 T */
+.company-info-top {
+  font-size: 11px;
+  line-height: 2;
+  font-weight: 300;
+}
+.company-info-bottom{
+  font-size: 11px;
+  line-height: 2;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.company-info-bottom > p{
+  margin-bottom: 10px;
+}
+
+/* policy T */
+.policy-T{
+  display: flex;
+  gap: 10px;
+}
+.policy-T li{
+  /* border-right: 1px solid #fff; */
+}
+.policy-T li:last-child{
+  /* border: none; */
+}
+.policy-T li a {
+  color: #fff;
+  line-height: 1.8em;
+  font-weight: 100;
+}
+
+/* sns-service */
+.sns-service-T li a img{
+  width: 25px;
+  height: 25px;
+  margin: 13px 30px 0 0;
 }

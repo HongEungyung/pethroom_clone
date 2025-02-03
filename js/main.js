@@ -47,3 +47,7 @@ window.onload = function () {
     }
   });
 };
+
+
+// 중간 바 
+

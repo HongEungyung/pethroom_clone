@@ -136,7 +136,7 @@
     .itemSwiper {
       width: 100%;
     }
-  }
+  
 
   /* 이미지 슬라이드 상세설명 캡션 */
   .caption .name {
@@ -223,8 +223,23 @@
     height: 110%;
   }
 
- 
+  /* 하단 이미지 */
+  .bottom-image-box{
+    display: none;
+  }
+  .bottom-image-box-T{
+    display: block;
+  }
 
+  /* 풋터 */
+  .footer{
+    display: none;
+  }
+ .footer-T{
+  display: block;
+ }
+
+}
 
 @media screen and (max-width: 390px) {
   /* 상단 이미지 */
